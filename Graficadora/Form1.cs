@@ -80,8 +80,8 @@ namespace Graficadora
 
             var serie = new Series("Resultado")
             {
-                ChartType = SeriesChartType.Line,
-                BorderWidth = 2
+                ChartType = SeriesChartType.Spline,
+                 BorderWidth = 2
             };
 
             try
@@ -99,6 +99,7 @@ namespace Graficadora
                   double y = Convert.ToDouble(resultado);
 
                     serie.Points.AddXY(x, y);
+                    serie.Color = Color.Red;
                 }
 
                 chart1.Series.Add(serie);
@@ -113,6 +114,11 @@ namespace Graficadora
         private void button2_Click(object sender, EventArgs e)
         {
             txtExpresion.Clear();
+
+            if (chart1.Series.IndexOf("Resultado") != -1)
+            {
+                chart1.Series.Remove(chart1.Series["Resultado"]);
+            }
         }
 
         private void button3_Click(object sender, EventArgs e)
