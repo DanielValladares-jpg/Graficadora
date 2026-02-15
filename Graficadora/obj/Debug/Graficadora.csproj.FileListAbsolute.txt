@@ -1,0 +1,12 @@
+C:\Users\danie\source\repos\Graficadora\Graficadora\bin\Debug\Graficadora.exe.config
+C:\Users\danie\source\repos\Graficadora\Graficadora\bin\Debug\Graficadora.exe
+C:\Users\danie\source\repos\Graficadora\Graficadora\bin\Debug\Graficadora.pdb
+C:\Users\danie\source\repos\Graficadora\Graficadora\bin\Debug\NCalc.dll
+C:\Users\danie\source\repos\Graficadora\Graficadora\obj\Debug\Graficadora.csproj.AssemblyReference.cache
+C:\Users\danie\source\repos\Graficadora\Graficadora\obj\Debug\Graficadora.Form1.resources
+C:\Users\danie\source\repos\Graficadora\Graficadora\obj\Debug\Graficadora.Properties.Resources.resources
+C:\Users\danie\source\repos\Graficadora\Graficadora\obj\Debug\Graficadora.csproj.GenerateResource.cache
+C:\Users\danie\source\repos\Graficadora\Graficadora\obj\Debug\Graficadora.csproj.CoreCompileInputs.cache
+C:\Users\danie\source\repos\Graficadora\Graficadora\obj\Debug\Graficad.9D98DE0E.Up2Date
+C:\Users\danie\source\repos\Graficadora\Graficadora\obj\Debug\Graficadora.exe
+C:\Users\danie\source\repos\Graficadora\Graficadora\obj\Debug\Graficadora.pdb
