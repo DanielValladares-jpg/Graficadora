@@ -63,7 +63,7 @@
             this.chart1.ChartAreas.Add(chartArea1);
             legend1.Name = "Legend1";
             this.chart1.Legends.Add(legend1);
-            this.chart1.Location = new System.Drawing.Point(291, 2);
+            this.chart1.Location = new System.Drawing.Point(372, 2);
             this.chart1.Name = "chart1";
             series1.ChartArea = "ChartArea1";
             series1.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Spline;
@@ -226,7 +226,7 @@
             // 
             this.panel1.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.panel1.Controls.Add(this.label2);
-            this.panel1.Location = new System.Drawing.Point(291, 363);
+            this.panel1.Location = new System.Drawing.Point(372, 363);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(579, 100);
             this.panel1.TabIndex = 16;
@@ -249,13 +249,13 @@
             this.panel2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.panel2.Location = new System.Drawing.Point(1, 230);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(284, 233);
+            this.panel2.Size = new System.Drawing.Size(344, 257);
             this.panel2.TabIndex = 17;
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(3, 0);
+            this.label3.Location = new System.Drawing.Point(-1, 0);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(285, 175);
             this.label3.TabIndex = 0;
@@ -266,7 +266,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.InactiveCaption;
-            this.ClientSize = new System.Drawing.Size(873, 462);
+            this.ClientSize = new System.Drawing.Size(984, 499);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.button13);
