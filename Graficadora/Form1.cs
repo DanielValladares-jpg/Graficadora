@@ -10,6 +10,7 @@ using System.Windows.Forms;
 using NCalc;
 using System.Windows.Forms.DataVisualization.Charting;
 
+
 namespace Graficadora
 {
     public partial class Form1 : Form
@@ -78,35 +79,48 @@ namespace Graficadora
                 chart1.Series.Remove(chart1.Series["Resultado"]);
             }
 
-            var serie = new Series("Resultado")
+            if (txtExpresion.Text.Contains("/0"))
             {
-                ChartType = SeriesChartType.Spline,
-                 BorderWidth = 2
-            };
+                MessageBox.Show("Error: No se permite la división por cero", "Operación Inválida",
 
-            try
-            {
-                Expression expression = new Expression(formula);
-
-
-                for (double x = -5; x <= 5; x += 0.01)
-                {
-                    expression.Parameters["x"] = x;
-
-
-
-                    object resultado = expression.Evaluate();
-                  double y = Convert.ToDouble(resultado);
-
-                    serie.Points.AddXY(x, y);
-                    serie.Color = Color.Red;
-                }
-
-                chart1.Series.Add(serie);
+                    MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
-            catch (Exception ex)
+
+            else
             {
-                MessageBox.Show("Error en la formula " + ex.Message);
+
+
+                var serie = new Series("Resultado")
+                {
+                    ChartType = SeriesChartType.Spline,
+                    BorderWidth = 2
+                };
+
+                try
+                {
+                    Expression expression = new Expression(formula);
+
+
+                    for (double x = -5; x <= 5; x += 0.01)
+                    {
+                        expression.Parameters["x"] = x;
+
+
+
+                        object resultado = expression.Evaluate();
+                        double y = Convert.ToDouble(resultado);
+
+                        serie.Points.AddXY(x, y);
+                        serie.Color = Color.Red;
+                    }
+
+                    chart1.Series.Add(serie);
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show("Error en la formula " + ex.Message);
+
+                }
 
             }
         }
